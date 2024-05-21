@@ -6,6 +6,11 @@ public class ManyFigures extends MyFrame {
 		fillRect(50,80,10,100);
 		fillRect(70,80,10,100);
 		fillRect(90,80,10,100);
+		fillRect(1100,80,10,100);
+		fillRect(130,80,10,100);
+		fillRect(150,80,10,100);
+		fillRect(170,80,10,100);
+		
 		
 	}
 
