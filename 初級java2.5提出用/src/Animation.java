@@ -1,44 +1,31 @@
 public class Animation extends MyFrame {
-	int y = 30;
-	int x = 30;
-
-	int nextY = 0;
-
-	private void MoveRect(int _x, int _y) {
-		//(1)画面を消す
-		clear();
-		//(2)四角形を表示する
-		setColor(0, 128, 0);
-		fillRect(x, y, 10, 100);
-		x += _x;
-		y += _y;
-		sleep(0.1);
-	}
 
 	public void run() {
 
+		double y = 0;
+		double x = 0;
+
+
+		float count = 0;
+
 		while (true) {
+			clear();
 
-			while (x <= 200) {
+			//(2)四角形を表示する
+			setColor(0, 128, 0);
+			fillRect(200 + x * 100, 100 + y * 200, 30, 30);
 
-				MoveRect(5, 0);
+			x = Math.sin(count);
+			y = Math.cos(count);
+
+			// 下方向に跳ねさせるため
+			// yが負の値の場合は正の値にする
+			if (y < 0) {
+				y *= -1;
 			}
+			count += 10 * Math.PI / 180;
+			sleep(0.05);
 
-			nextY = y + 50;
-			while (y <= nextY) {
-				MoveRect(0, 5);
-			}
-
-			while (x >= 30) {
-
-				MoveRect(-5, 0);
-			}
-
-			nextY = y + 50;
-			while (y <= nextY) {
-
-				MoveRect(0, 5);
-			}
 		}
 	}
 }
