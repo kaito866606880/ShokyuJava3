@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
 public class Animation extends MyFrame  {
 	public void run() {
@@ -15,7 +15,7 @@ public class Animation extends MyFrame  {
 	}
 
 }
-=======
+
 public class Animation extends MyFrame {
 
 	public void run() {
@@ -47,4 +47,4 @@ public class Animation extends MyFrame {
 		}
 	}
 }
->>>>>>> main
+
