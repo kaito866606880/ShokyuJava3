@@ -4,7 +4,7 @@ public class Start {
 		// TODO 自動生成されたメソッド・スタブ
 
 		System.out.println("プログラムを実行します");
-		MyFrame f = new DisplayFaceVector();
+		MyFrame frame1 = new CarAnimation();
 
 	}
 }
